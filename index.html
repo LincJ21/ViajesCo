@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Viajes y Paseos - Descubre tu próxima aventura</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">VIAJES CO</div>
+    <nav class="nav">
+      <a href="#">Inicio</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#tours">Tours</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#" class="btn btn-primary">Reserva ahora</a>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>Descubre tu próxima aventura</h1>
+        <p>Los mejores destinos y experiencias de viaje</p>
+
+        <form class="search-box">
+          <div class="search-field">
+            <label for="destino">Destino</label>
+            <input type="text" id="destino" placeholder="¿A dónde vas?">
+          </div>
+          <div class="search-field">
+            <label for="ida">Fecha ida</label>
+            <input type="date" id="ida">
+          </div>
+          <div class="search-field">
+            <label for="vuelta">Fecha vuelta</label>
+            <input type="date" id="vuelta">
+          </div>
+          <div class="search-field">
+            <label for="viajeros">Viajeros</label>
+            <input type="number" id="viajeros" min="1" value="1">
+          </div>
+          <button type="submit" class="btn btn-secondary search-btn">Buscar</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <span>Mejores precios</span>
+      <span>Cancelación gratuita</span>
+      <span>Soporte 24/7</span>
+      <span>+10.000 clientes felices</span>
+    </section>
+
+    <section id="destinos" class="destinos">
+      <h2>Destinos más visitados</h2>
+      <div class="grid-destinos">
+
+        <article class="card">
+          <div class="card-img img-cartagena"></div>
+          <div class="card-body">
+            <h3>Cartagena</h3>
+            <p class="precio">Desde $400.000</p>
+            <a href="#" class="btn btn-primary btn-block">Ver detalles</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img img-sanandres"></div>
+          <div class="card-body">
+            <h3>San Andrés</h3>
+            <p class="precio">Desde $450.000</p>
+            <a href="#" class="btn btn-primary btn-block">Ver detalles</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img img-santamarta"></div>
+          <div class="card-body">
+            <h3>Santa Marta</h3>
+            <p class="precio">Desde $220.000</p>
+            <a href="#" class="btn btn-primary btn-block">Ver detalles</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img img-ejecafetero"></div>
+          <div class="card-body">
+            <h3>Eje Cafetero</h3>
+            <p class="precio">Desde $280.000</p>
+            <a href="#" class="btn btn-primary btn-block">Ver detalles</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="tours" class="tours">
+      <h2>Experiencias únicas</h2>
+
+      <article class="tour">
+        <div class="tour-img img-aventura"></div>
+        <div class="tour-info">
+          <h3>Tour de Aventura</h3>
+          <p>Explora la naturaleza con actividades extremas.</p>
+          <p class="precio">Duración: 3 días · Precio: $950.000</p>
+        </div>
+        <a href="#" class="btn btn-secondary">Reservar</a>
+      </article>
+
+      <article class="tour">
+        <div class="tour-img img-cultural"></div>
+        <div class="tour-info">
+          <h3>Tour Cultural</h3>
+          <p>Conoce la historia y cultura local.</p>
+          <p class="precio">Duración: 2 días · Precio: $720.000</p>
+        </div>
+        <a href="#" class="btn btn-secondary">Reservar</a>
+      </article>
+
+    </section>
+
+    <section id="nosotros" class="why-us">
+      <h2>Por qué viajar con nosotros</h2>
+      <div class="grid-why">
+        <article class="why-card">
+          <h3>Guías expertos</h3>
+          <p>Profesionales con años de experiencia local.</p>
+        </article>
+        <article class="why-card">
+          <h3>Grupos pequeños</h3>
+          <p>Experiencias más personales y cercanas.</p>
+        </article>
+        <article class="why-card">
+          <h3>Experiencias auténticas</h3>
+          <p>Conexión real con la cultura y el destino.</p>
+        </article>
+        <article class="why-card">
+          <h3>Seguridad garantizada</h3>
+          <p>Protocolos y acompañamiento en todo momento.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonios">
+      <h2>Lo que dicen nuestros viajeros</h2>
+      <div class="grid-testimonios">
+        <article class="testimonio">
+          <p>"Increíble experiencia, todo salió perfecto."</p>
+          <p class="autor">María, Colombia</p>
+        </article>
+        <article class="testimonio">
+          <p>"Todo perfectamente organizado de inicio a fin."</p>
+          <p class="autor">Carlos, México</p>
+        </article>
+        <article class="testimonio">
+          <p>"Volvería a viajar con ellos sin duda alguna."</p>
+          <p class="autor">Ana, Argentina</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2>Recibe ofertas exclusivas</h2>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Tu correo electrónico">
+        <button type="submit" class="btn btn-secondary">Suscribirme</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="contacto" class="footer">
+    <div class="footer-col">
+      <h4>VIAJES CO</h4>
+      <p>Tu agencia de viajes de confianza.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Enlaces rápidos</h4>
+      <p>Inicio</p>
+      <p>Destinos</p>
+      <p>Tours</p>
+      <p>Contacto</p>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <p>Términos</p>
+      <p>Privacidad</p>
+      <p>Cookies</p>
+    </div>
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <p>Facebook · Instagram · Twitter</p>
+    </div>
+    <p class="copyright">Copyright 2026 Viajes Co. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
